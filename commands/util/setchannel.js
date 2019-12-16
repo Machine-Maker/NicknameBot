@@ -11,6 +11,7 @@ module.exports = class SetChannel extends Commando.Command {
         'Configures channels for requesting and approving nickname changes',
       examples: ['setchannel request #request-channel'],
       guildOnly: true,
+      userPermissions: ['MANAGE_NICKNAMES'],
       argsPromptLimit: 2,
       args: [
         {

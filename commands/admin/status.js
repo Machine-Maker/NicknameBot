@@ -9,7 +9,8 @@ module.exports = class Status extends Commando.Command {
       description: 'Checks status of the configured channels',
       details: 'Shows configuration of both request and receive channels',
       examples: ['status'],
-      guildOnly: true
+      guildOnly: true,
+      userPermissions: ['ADMINISTRATOR']
     })
   }
 

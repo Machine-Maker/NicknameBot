@@ -9,7 +9,8 @@ module.exports = class Reset extends Commando.Command {
       description: 'Resets the configuration',
       details: 'Resets both channel configurations for the guild',
       examples: ['reset'],
-      guildOnly: true
+      guildOnly: true,
+      userPermissions: ['ADMINISTRATOR']
     })
   }
 
